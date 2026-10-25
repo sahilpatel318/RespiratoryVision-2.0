@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "respiratory-vision"
+version = "2.0.0"
+description = "Local video respiratory motion research platform with quality-gated estimation"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "opencv-python>=4.8", "matplotlib>=3.7", "streamlit>=1.50", "pandas>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+ml = ["torch>=2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+force-exclude = true
+extend-exclude = ["**/_baseline/**", "**/synthetic.py", "**/model.py"]
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
