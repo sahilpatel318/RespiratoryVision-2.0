@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "clinical": false,
+  "ground_truth_bpm": 22.0,
+  "duration_seconds": 20.0,
+  "fps": 15,
+  "width": 200,
+  "height": 150,
+  "motion_amplitude_pixels": 5.0,
+  "seed": 7
+}

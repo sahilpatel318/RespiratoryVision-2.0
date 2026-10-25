@@ -1,0 +1,4412 @@
+{
+  "config": {
+    "epochs": 12,
+    "patience": 4,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "train_size": 600,
+    "validation_size": 120,
+    "test_size": 120,
+    "samples": 300,
+    "fps": 15.0,
+    "seed": 7
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "training_mae": 22.283470128377278,
+      "validation_mae": 21.614355087280273
+    },
+    {
+      "epoch": 2,
+      "training_mae": 21.59038403828939,
+      "validation_mae": 20.78483009338379
+    },
+    {
+      "epoch": 3,
+      "training_mae": 20.115311482747394,
+      "validation_mae": 18.529722213745117
+    },
+    {
+      "epoch": 4,
+      "training_mae": 17.0871502049764,
+      "validation_mae": 14.277576446533203
+    },
+    {
+      "epoch": 5,
+      "training_mae": 11.519100252787272,
+      "validation_mae": 7.841409206390381
+    },
+    {
+      "epoch": 6,
+      "training_mae": 3.872365819613139,
+      "validation_mae": 2.8447368144989014
+    },
+    {
+      "epoch": 7,
+      "training_mae": 2.1813316980997723,
+      "validation_mae": 2.0955097675323486
+    },
+    {
+      "epoch": 8,
+      "training_mae": 1.4097482458750408,
+      "validation_mae": 1.5896493196487427
+    },
+    {
+      "epoch": 9,
+      "training_mae": 0.9926689958572388,
+      "validation_mae": 1.3038201332092285
+    },
+    {
+      "epoch": 10,
+      "training_mae": 0.9195162471135457,
+      "validation_mae": 0.9792174696922302
+    },
+    {
+      "epoch": 11,
+      "training_mae": 1.1318567736943563,
+      "validation_mae": 1.6142815351486206
+    },
+    {
+      "epoch": 12,
+      "training_mae": 1.028276420434316,
+      "validation_mae": 0.6267664432525635
+    }
+  ],
+  "best_epoch": 12,
+  "split_seeds": {
+    "training": 7,
+    "validation": 8,
+    "test": 9
+  },
+  "test_comparison": {
+    "welch": {
+      "n_total": 120,
+      "n_predictions": 120,
+      "acceptance_rate": 1.0,
+      "rejection_rate": 0.0,
+      "mae": 0.1463866154352824,
+      "rmse": 0.19857754022348822,
+      "mean_signed_error": -0.050868932406107584,
+      "median_absolute_error": 0.11311721801757812,
+      "within_2_bpm_percent": 100.0,
+      "within_3_bpm_percent": 100.0,
+      "mae_95ci": [
+        0.12391772329807282,
+        0.17232541600863138
+      ],
+      "mean_processing_seconds": null,
+      "absolute_error_quantiles_bpm": {
+        "0": 0.0010318756103515625,
+        "0.25": 0.060337066650390625,
+        "0.5": 0.11311721801757812,
+        "0.75": 0.19612407684326172,
+        "0.9": 0.28723526000976574,
+        "1": 0.7993240356445312
+      }
+    },
+    "autocorrelation": {
+      "n_total": 120,
+      "n_predictions": 120,
+      "acceptance_rate": 1.0,
+      "rejection_rate": 0.0,
+      "mae": 0.18861426122109595,
+      "rmse": 0.2383795871522479,
+      "mean_signed_error": -0.07764925223527915,
+      "median_absolute_error": 0.17235068713917467,
+      "within_2_bpm_percent": 100.0,
+      "within_3_bpm_percent": 100.0,
+      "mae_95ci": [
+        0.1641891968887688,
+        0.21591076495297984
+      ],
+      "mean_processing_seconds": null,
+      "absolute_error_quantiles_bpm": {
+        "0": 0.0034122467041015625,
+        "0.25": 0.08163969589260578,
+        "0.5": 0.17235068713917467,
+        "0.75": 0.24395570750996853,
+        "0.9": 0.376120868828248,
+        "1": 0.7238171895345076
+      }
+    },
+    "peaks": {
+      "n_total": 120,
+      "n_predictions": 119,
+      "acceptance_rate": 0.9916666666666667,
+      "rejection_rate": 0.008333333333333304,
+      "mae": 0.19149470120260992,
+      "rmse": 0.24409365306335282,
+      "mean_signed_error": -0.04414626930369742,
+      "median_absolute_error": 0.15293720790317877,
+      "within_2_bpm_percent": 100.0,
+      "within_3_bpm_percent": 100.0,
+      "mae_95ci": [
+        0.16576989738626705,
+        0.22011765698748673
+      ],
+      "mean_processing_seconds": null,
+      "absolute_error_quantiles_bpm": {
+        "0": 0.0038524144132381366,
+        "0.25": 0.06358044488089298,
+        "0.5": 0.15293720790317877,
+        "0.75": 0.2664903004964181,
+        "0.9": 0.4593920278025223,
+        "1": 0.5900356809971701
+      }
+    },
+    "agreement_fusion": {
+      "n_total": 120,
+      "n_predictions": 120,
+      "acceptance_rate": 1.0,
+      "rejection_rate": 0.0,
+      "mae": 0.15177677505860768,
+      "rmse": 0.20154218732812645,
+      "mean_signed_error": -0.0700370047907842,
+      "median_absolute_error": 0.1243091310773572,
+      "within_2_bpm_percent": 100.0,
+      "within_3_bpm_percent": 100.0,
+      "mae_95ci": [
+        0.12951983805995126,
+        0.17756286087191991
+      ],
+      "mean_processing_seconds": null,
+      "absolute_error_quantiles_bpm": {
+        "0": 0.0010318756103515625,
+        "0.25": 0.051535648334763096,
+        "0.5": 0.1243091310773572,
+        "0.75": 0.21274232864379883,
+        "0.9": 0.3102951322283056,
+        "1": 0.5714545616736757
+      }
+    },
+    "temporal_cnn": {
+      "n_total": 120,
+      "n_predictions": 120,
+      "acceptance_rate": 1.0,
+      "rejection_rate": 0.0,
+      "mae": 0.4918819983800252,
+      "rmse": 0.6507109510406104,
+      "mean_signed_error": 0.16190168857574463,
+      "median_absolute_error": 0.3664836883544922,
+      "within_2_bpm_percent": 99.16666666666667,
+      "within_3_bpm_percent": 100.0,
+      "mae_95ci": [
+        0.41939474403858185,
+        0.5685348697503407
+      ],
+      "mean_processing_seconds": null,
+      "absolute_error_quantiles_bpm": {
+        "0": 0.008111953735351562,
+        "0.25": 0.1591324806213379,
+        "0.5": 0.3664836883544922,
+        "0.75": 0.673579216003418,
+        "0.9": 1.01336612701416,
+        "1": 2.0545654296875
+      }
+    }
+  },
+  "test_predictions": [
+    {
+      "case_id": "test-0000",
+      "method": "welch",
+      "reference_bpm": 32.36697769165039,
+      "estimated_bpm": 32.51953125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0000",
+      "method": "autocorrelation",
+      "reference_bpm": 32.36697769165039,
+      "estimated_bpm": 32.142857142857146,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0000",
+      "method": "peaks",
+      "reference_bpm": 32.36697769165039,
+      "estimated_bpm": 32.14285714285714,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0000",
+      "method": "agreement_fusion",
+      "reference_bpm": 32.36697769165039,
+      "estimated_bpm": 32.142857142857146,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0000",
+      "method": "temporal_cnn",
+      "reference_bpm": 32.36697769165039,
+      "estimated_bpm": 32.70486831665039,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0001",
+      "method": "welch",
+      "reference_bpm": 13.517219543457031,
+      "estimated_bpm": 13.18359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0001",
+      "method": "autocorrelation",
+      "reference_bpm": 13.517219543457031,
+      "estimated_bpm": 13.432835820895523,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0001",
+      "method": "peaks",
+      "reference_bpm": 13.517219543457031,
+      "estimated_bpm": 13.636363636363635,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0001",
+      "method": "agreement_fusion",
+      "reference_bpm": 13.517219543457031,
+      "estimated_bpm": 13.432835820895523,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0001",
+      "method": "temporal_cnn",
+      "reference_bpm": 13.517219543457031,
+      "estimated_bpm": 13.28277587890625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0002",
+      "method": "welch",
+      "reference_bpm": 14.036247253417969,
+      "estimated_bpm": 14.0625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0002",
+      "method": "autocorrelation",
+      "reference_bpm": 14.036247253417969,
+      "estimated_bpm": 13.846153846153847,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0002",
+      "method": "peaks",
+      "reference_bpm": 14.036247253417969,
+      "estimated_bpm": 14.0625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0002",
+      "method": "agreement_fusion",
+      "reference_bpm": 14.036247253417969,
+      "estimated_bpm": 14.0625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0002",
+      "method": "temporal_cnn",
+      "reference_bpm": 14.036247253417969,
+      "estimated_bpm": 13.694544792175293,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0003",
+      "method": "welch",
+      "reference_bpm": 14.708870887756348,
+      "estimated_bpm": 14.501953125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0003",
+      "method": "autocorrelation",
+      "reference_bpm": 14.708870887756348,
+      "estimated_bpm": 14.516129032258064,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0003",
+      "method": "peaks",
+      "reference_bpm": 14.708870887756348,
+      "estimated_bpm": 14.754098360655739,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0003",
+      "method": "agreement_fusion",
+      "reference_bpm": 14.708870887756348,
+      "estimated_bpm": 14.516129032258064,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0003",
+      "method": "temporal_cnn",
+      "reference_bpm": 14.708870887756348,
+      "estimated_bpm": 14.430215835571289,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0004",
+      "method": "welch",
+      "reference_bpm": 33.1578369140625,
+      "estimated_bpm": 32.958984375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0004",
+      "method": "autocorrelation",
+      "reference_bpm": 33.1578369140625,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0004",
+      "method": "peaks",
+      "reference_bpm": 33.1578369140625,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0004",
+      "method": "agreement_fusion",
+      "reference_bpm": 33.1578369140625,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0004",
+      "method": "temporal_cnn",
+      "reference_bpm": 33.1578369140625,
+      "estimated_bpm": 35.21240234375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0005",
+      "method": "welch",
+      "reference_bpm": 24.282575607299805,
+      "estimated_bpm": 24.169921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0005",
+      "method": "autocorrelation",
+      "reference_bpm": 24.282575607299805,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0005",
+      "method": "peaks",
+      "reference_bpm": 24.282575607299805,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0005",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.282575607299805,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0005",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.282575607299805,
+      "estimated_bpm": 24.12327766418457,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0006",
+      "method": "welch",
+      "reference_bpm": 13.22861099243164,
+      "estimated_bpm": 12.744140625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0006",
+      "method": "autocorrelation",
+      "reference_bpm": 13.22861099243164,
+      "estimated_bpm": 13.043478260869565,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0006",
+      "method": "peaks",
+      "reference_bpm": 13.22861099243164,
+      "estimated_bpm": 12.857142857142856,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0006",
+      "method": "agreement_fusion",
+      "reference_bpm": 13.22861099243164,
+      "estimated_bpm": 12.857142857142856,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0006",
+      "method": "temporal_cnn",
+      "reference_bpm": 13.22861099243164,
+      "estimated_bpm": 12.546823501586914,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0007",
+      "method": "welch",
+      "reference_bpm": 29.393129348754883,
+      "estimated_bpm": 29.443359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0007",
+      "method": "autocorrelation",
+      "reference_bpm": 29.393129348754883,
+      "estimated_bpm": 29.032258064516128,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0007",
+      "method": "peaks",
+      "reference_bpm": 29.393129348754883,
+      "estimated_bpm": 29.032258064516125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0007",
+      "method": "agreement_fusion",
+      "reference_bpm": 29.393129348754883,
+      "estimated_bpm": 29.032258064516128,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0007",
+      "method": "temporal_cnn",
+      "reference_bpm": 29.393129348754883,
+      "estimated_bpm": 29.852123260498047,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0008",
+      "method": "welch",
+      "reference_bpm": 8.242420196533203,
+      "estimated_bpm": 7.470703125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0008",
+      "method": "autocorrelation",
+      "reference_bpm": 8.242420196533203,
+      "estimated_bpm": 8.181818181818182,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0008",
+      "method": "peaks",
+      "reference_bpm": 8.242420196533203,
+      "estimated_bpm": 8.450704225352114,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0008",
+      "method": "agreement_fusion",
+      "reference_bpm": 8.242420196533203,
+      "estimated_bpm": 8.181818181818182,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0008",
+      "method": "temporal_cnn",
+      "reference_bpm": 8.242420196533203,
+      "estimated_bpm": 8.899429321289062,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0009",
+      "method": "welch",
+      "reference_bpm": 33.04121780395508,
+      "estimated_bpm": 32.958984375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0009",
+      "method": "autocorrelation",
+      "reference_bpm": 33.04121780395508,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0009",
+      "method": "peaks",
+      "reference_bpm": 33.04121780395508,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0009",
+      "method": "agreement_fusion",
+      "reference_bpm": 33.04121780395508,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0009",
+      "method": "temporal_cnn",
+      "reference_bpm": 33.04121780395508,
+      "estimated_bpm": 33.1630744934082,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0010",
+      "method": "welch",
+      "reference_bpm": 25.65108299255371,
+      "estimated_bpm": 25.48828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0010",
+      "method": "autocorrelation",
+      "reference_bpm": 25.65108299255371,
+      "estimated_bpm": 25.714285714285715,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0010",
+      "method": "peaks",
+      "reference_bpm": 25.65108299255371,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0010",
+      "method": "agreement_fusion",
+      "reference_bpm": 25.65108299255371,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0010",
+      "method": "temporal_cnn",
+      "reference_bpm": 25.65108299255371,
+      "estimated_bpm": 25.66389274597168,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0011",
+      "method": "welch",
+      "reference_bpm": 15.796439170837402,
+      "estimated_bpm": 15.8203125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0011",
+      "method": "autocorrelation",
+      "reference_bpm": 15.796439170837402,
+      "estimated_bpm": 15.789473684210526,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0011",
+      "method": "peaks",
+      "reference_bpm": 15.796439170837402,
+      "estimated_bpm": 16.07142857142857,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0011",
+      "method": "agreement_fusion",
+      "reference_bpm": 15.796439170837402,
+      "estimated_bpm": 15.8203125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0011",
+      "method": "temporal_cnn",
+      "reference_bpm": 15.796439170837402,
+      "estimated_bpm": 16.036832809448242,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0012",
+      "method": "welch",
+      "reference_bpm": 13.261062622070312,
+      "estimated_bpm": 13.18359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0012",
+      "method": "autocorrelation",
+      "reference_bpm": 13.261062622070312,
+      "estimated_bpm": 13.235294117647058,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0012",
+      "method": "peaks",
+      "reference_bpm": 13.261062622070312,
+      "estimated_bpm": 13.432835820895521,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0012",
+      "method": "agreement_fusion",
+      "reference_bpm": 13.261062622070312,
+      "estimated_bpm": 13.235294117647058,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0012",
+      "method": "temporal_cnn",
+      "reference_bpm": 13.261062622070312,
+      "estimated_bpm": 13.16908073425293,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0013",
+      "method": "welch",
+      "reference_bpm": 19.34656524658203,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0013",
+      "method": "autocorrelation",
+      "reference_bpm": 19.34656524658203,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0013",
+      "method": "peaks",
+      "reference_bpm": 19.34656524658203,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0013",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.34656524658203,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0013",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.34656524658203,
+      "estimated_bpm": 19.563438415527344,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0014",
+      "method": "welch",
+      "reference_bpm": 24.05595588684082,
+      "estimated_bpm": 24.169921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0014",
+      "method": "autocorrelation",
+      "reference_bpm": 24.05595588684082,
+      "estimated_bpm": 23.68421052631579,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0014",
+      "method": "peaks",
+      "reference_bpm": 24.05595588684082,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0014",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.05595588684082,
+      "estimated_bpm": 24.169921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0014",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.05595588684082,
+      "estimated_bpm": 23.771743774414062,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0015",
+      "method": "welch",
+      "reference_bpm": 21.012752532958984,
+      "estimated_bpm": 21.09375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0015",
+      "method": "autocorrelation",
+      "reference_bpm": 21.012752532958984,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0015",
+      "method": "peaks",
+      "reference_bpm": 21.012752532958984,
+      "estimated_bpm": 20.930232558139533,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0015",
+      "method": "agreement_fusion",
+      "reference_bpm": 21.012752532958984,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0015",
+      "method": "temporal_cnn",
+      "reference_bpm": 21.012752532958984,
+      "estimated_bpm": 20.845579147338867,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0016",
+      "method": "welch",
+      "reference_bpm": 31.52704429626465,
+      "estimated_bpm": 31.640625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0016",
+      "method": "autocorrelation",
+      "reference_bpm": 31.52704429626465,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0016",
+      "method": "peaks",
+      "reference_bpm": 31.52704429626465,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0016",
+      "method": "agreement_fusion",
+      "reference_bpm": 31.52704429626465,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0016",
+      "method": "temporal_cnn",
+      "reference_bpm": 31.52704429626465,
+      "estimated_bpm": 30.516199111938477,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0017",
+      "method": "welch",
+      "reference_bpm": 23.709260940551758,
+      "estimated_bpm": 23.73046875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0017",
+      "method": "autocorrelation",
+      "reference_bpm": 23.709260940551758,
+      "estimated_bpm": 23.68421052631579,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0017",
+      "method": "peaks",
+      "reference_bpm": 23.709260940551758,
+      "estimated_bpm": 23.68421052631579,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0017",
+      "method": "agreement_fusion",
+      "reference_bpm": 23.709260940551758,
+      "estimated_bpm": 23.68421052631579,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0017",
+      "method": "temporal_cnn",
+      "reference_bpm": 23.709260940551758,
+      "estimated_bpm": 24.040800094604492,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0018",
+      "method": "welch",
+      "reference_bpm": 24.938608169555664,
+      "estimated_bpm": 25.048828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0018",
+      "method": "autocorrelation",
+      "reference_bpm": 24.938608169555664,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0018",
+      "method": "peaks",
+      "reference_bpm": 24.938608169555664,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0018",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.938608169555664,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0018",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.938608169555664,
+      "estimated_bpm": 25.85171127319336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0019",
+      "method": "welch",
+      "reference_bpm": 35.072959899902344,
+      "estimated_bpm": 35.15625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0019",
+      "method": "autocorrelation",
+      "reference_bpm": 35.072959899902344,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0019",
+      "method": "peaks",
+      "reference_bpm": 35.072959899902344,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0019",
+      "method": "agreement_fusion",
+      "reference_bpm": 35.072959899902344,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0019",
+      "method": "temporal_cnn",
+      "reference_bpm": 35.072959899902344,
+      "estimated_bpm": 33.2952995300293,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0020",
+      "method": "welch",
+      "reference_bpm": 21.58150863647461,
+      "estimated_bpm": 21.533203125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0020",
+      "method": "autocorrelation",
+      "reference_bpm": 21.58150863647461,
+      "estimated_bpm": 21.428571428571427,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0020",
+      "method": "peaks",
+      "reference_bpm": 21.58150863647461,
+      "estimated_bpm": 21.42857142857143,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0020",
+      "method": "agreement_fusion",
+      "reference_bpm": 21.58150863647461,
+      "estimated_bpm": 21.42857142857143,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0020",
+      "method": "temporal_cnn",
+      "reference_bpm": 21.58150863647461,
+      "estimated_bpm": 21.625925064086914,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0021",
+      "method": "welch",
+      "reference_bpm": 24.60544776916504,
+      "estimated_bpm": 24.609375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0021",
+      "method": "autocorrelation",
+      "reference_bpm": 24.60544776916504,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0021",
+      "method": "peaks",
+      "reference_bpm": 24.60544776916504,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0021",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.60544776916504,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0021",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.60544776916504,
+      "estimated_bpm": 24.720279693603516,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0022",
+      "method": "welch",
+      "reference_bpm": 26.229530334472656,
+      "estimated_bpm": 26.3671875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0022",
+      "method": "autocorrelation",
+      "reference_bpm": 26.229530334472656,
+      "estimated_bpm": 26.470588235294116,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0022",
+      "method": "peaks",
+      "reference_bpm": 26.229530334472656,
+      "estimated_bpm": 26.47058823529412,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0022",
+      "method": "agreement_fusion",
+      "reference_bpm": 26.229530334472656,
+      "estimated_bpm": 26.470588235294116,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0022",
+      "method": "temporal_cnn",
+      "reference_bpm": 26.229530334472656,
+      "estimated_bpm": 27.242847442626953,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0023",
+      "method": "welch",
+      "reference_bpm": 29.04634666442871,
+      "estimated_bpm": 29.00390625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0023",
+      "method": "autocorrelation",
+      "reference_bpm": 29.04634666442871,
+      "estimated_bpm": 29.032258064516128,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0023",
+      "method": "peaks",
+      "reference_bpm": 29.04634666442871,
+      "estimated_bpm": 29.032258064516125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0023",
+      "method": "agreement_fusion",
+      "reference_bpm": 29.04634666442871,
+      "estimated_bpm": 29.032258064516125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0023",
+      "method": "temporal_cnn",
+      "reference_bpm": 29.04634666442871,
+      "estimated_bpm": 30.324682235717773,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0024",
+      "method": "welch",
+      "reference_bpm": 12.869974136352539,
+      "estimated_bpm": 12.744140625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0024",
+      "method": "autocorrelation",
+      "reference_bpm": 12.869974136352539,
+      "estimated_bpm": 12.857142857142858,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0024",
+      "method": "peaks",
+      "reference_bpm": 12.869974136352539,
+      "estimated_bpm": 12.676056338028168,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0024",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.869974136352539,
+      "estimated_bpm": 12.744140625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0024",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.869974136352539,
+      "estimated_bpm": 12.906200408935547,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0025",
+      "method": "welch",
+      "reference_bpm": 19.117494583129883,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0025",
+      "method": "autocorrelation",
+      "reference_bpm": 19.117494583129883,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0025",
+      "method": "peaks",
+      "reference_bpm": 19.117494583129883,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0025",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.117494583129883,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0025",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.117494583129883,
+      "estimated_bpm": 19.04488754272461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0026",
+      "method": "welch",
+      "reference_bpm": 12.173409461975098,
+      "estimated_bpm": 11.865234375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0026",
+      "method": "autocorrelation",
+      "reference_bpm": 12.173409461975098,
+      "estimated_bpm": 12.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0026",
+      "method": "peaks",
+      "reference_bpm": 12.173409461975098,
+      "estimated_bpm": 12.080536912751677,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0026",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.173409461975098,
+      "estimated_bpm": 12.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0026",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.173409461975098,
+      "estimated_bpm": 11.723203659057617,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0027",
+      "method": "welch",
+      "reference_bpm": 18.96430015563965,
+      "estimated_bpm": 18.896484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0027",
+      "method": "autocorrelation",
+      "reference_bpm": 18.96430015563965,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0027",
+      "method": "peaks",
+      "reference_bpm": 18.96430015563965,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0027",
+      "method": "agreement_fusion",
+      "reference_bpm": 18.96430015563965,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0027",
+      "method": "temporal_cnn",
+      "reference_bpm": 18.96430015563965,
+      "estimated_bpm": 18.790891647338867,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0028",
+      "method": "welch",
+      "reference_bpm": 20.112173080444336,
+      "estimated_bpm": 20.21484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0028",
+      "method": "autocorrelation",
+      "reference_bpm": 20.112173080444336,
+      "estimated_bpm": 20.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0028",
+      "method": "peaks",
+      "reference_bpm": 20.112173080444336,
+      "estimated_bpm": 20.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0028",
+      "method": "agreement_fusion",
+      "reference_bpm": 20.112173080444336,
+      "estimated_bpm": 20.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0028",
+      "method": "temporal_cnn",
+      "reference_bpm": 20.112173080444336,
+      "estimated_bpm": 20.981409072875977,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0029",
+      "method": "welch",
+      "reference_bpm": 19.287216186523438,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0029",
+      "method": "autocorrelation",
+      "reference_bpm": 19.287216186523438,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0029",
+      "method": "peaks",
+      "reference_bpm": 19.287216186523438,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0029",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.287216186523438,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0029",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.287216186523438,
+      "estimated_bpm": 19.165842056274414,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0030",
+      "method": "welch",
+      "reference_bpm": 12.679908752441406,
+      "estimated_bpm": 12.3046875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0030",
+      "method": "autocorrelation",
+      "reference_bpm": 12.679908752441406,
+      "estimated_bpm": 12.67605633802817,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0030",
+      "method": "peaks",
+      "reference_bpm": 12.679908752441406,
+      "estimated_bpm": 12.676056338028168,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0030",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.679908752441406,
+      "estimated_bpm": 12.676056338028168,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0030",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.679908752441406,
+      "estimated_bpm": 12.875068664550781,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0031",
+      "method": "welch",
+      "reference_bpm": 25.188079833984375,
+      "estimated_bpm": 25.048828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0031",
+      "method": "autocorrelation",
+      "reference_bpm": 25.188079833984375,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0031",
+      "method": "peaks",
+      "reference_bpm": 25.188079833984375,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0031",
+      "method": "agreement_fusion",
+      "reference_bpm": 25.188079833984375,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0031",
+      "method": "temporal_cnn",
+      "reference_bpm": 25.188079833984375,
+      "estimated_bpm": 26.04387855529785,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0032",
+      "method": "welch",
+      "reference_bpm": 10.700798988342285,
+      "estimated_bpm": 10.546875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0032",
+      "method": "autocorrelation",
+      "reference_bpm": 10.700798988342285,
+      "estimated_bpm": 10.714285714285714,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0032",
+      "method": "peaks",
+      "reference_bpm": 10.700798988342285,
+      "estimated_bpm": 10.778443113772456,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0032",
+      "method": "agreement_fusion",
+      "reference_bpm": 10.700798988342285,
+      "estimated_bpm": 10.714285714285714,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0032",
+      "method": "temporal_cnn",
+      "reference_bpm": 10.700798988342285,
+      "estimated_bpm": 10.854387283325195,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0033",
+      "method": "welch",
+      "reference_bpm": 30.618982315063477,
+      "estimated_bpm": 30.76171875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0033",
+      "method": "autocorrelation",
+      "reference_bpm": 30.618982315063477,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0033",
+      "method": "peaks",
+      "reference_bpm": 30.618982315063477,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0033",
+      "method": "agreement_fusion",
+      "reference_bpm": 30.618982315063477,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0033",
+      "method": "temporal_cnn",
+      "reference_bpm": 30.618982315063477,
+      "estimated_bpm": 31.0508975982666,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0034",
+      "method": "welch",
+      "reference_bpm": 22.85051727294922,
+      "estimated_bpm": 22.8515625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0034",
+      "method": "autocorrelation",
+      "reference_bpm": 22.85051727294922,
+      "estimated_bpm": 22.5,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0034",
+      "method": "peaks",
+      "reference_bpm": 22.85051727294922,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0034",
+      "method": "agreement_fusion",
+      "reference_bpm": 22.85051727294922,
+      "estimated_bpm": 22.8515625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0034",
+      "method": "temporal_cnn",
+      "reference_bpm": 22.85051727294922,
+      "estimated_bpm": 23.461868286132812,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0035",
+      "method": "welch",
+      "reference_bpm": 14.348648071289062,
+      "estimated_bpm": 14.501953125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0035",
+      "method": "autocorrelation",
+      "reference_bpm": 14.348648071289062,
+      "estimated_bpm": 14.285714285714286,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0035",
+      "method": "peaks",
+      "reference_bpm": 14.348648071289062,
+      "estimated_bpm": 14.285714285714285,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0035",
+      "method": "agreement_fusion",
+      "reference_bpm": 14.348648071289062,
+      "estimated_bpm": 14.285714285714286,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0035",
+      "method": "temporal_cnn",
+      "reference_bpm": 14.348648071289062,
+      "estimated_bpm": 14.395245552062988,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0036",
+      "method": "welch",
+      "reference_bpm": 30.102773666381836,
+      "estimated_bpm": 29.8828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0036",
+      "method": "autocorrelation",
+      "reference_bpm": 30.102773666381836,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0036",
+      "method": "peaks",
+      "reference_bpm": 30.102773666381836,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0036",
+      "method": "agreement_fusion",
+      "reference_bpm": 30.102773666381836,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0036",
+      "method": "temporal_cnn",
+      "reference_bpm": 30.102773666381836,
+      "estimated_bpm": 29.612648010253906,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0037",
+      "method": "welch",
+      "reference_bpm": 20.835010528564453,
+      "estimated_bpm": 21.09375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0037",
+      "method": "autocorrelation",
+      "reference_bpm": 20.835010528564453,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0037",
+      "method": "peaks",
+      "reference_bpm": 20.835010528564453,
+      "estimated_bpm": 20.930232558139533,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0037",
+      "method": "agreement_fusion",
+      "reference_bpm": 20.835010528564453,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0037",
+      "method": "temporal_cnn",
+      "reference_bpm": 20.835010528564453,
+      "estimated_bpm": 21.848817825317383,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0038",
+      "method": "welch",
+      "reference_bpm": 12.328073501586914,
+      "estimated_bpm": 12.3046875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0038",
+      "method": "autocorrelation",
+      "reference_bpm": 12.328073501586914,
+      "estimated_bpm": 12.162162162162161,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0038",
+      "method": "peaks",
+      "reference_bpm": 12.328073501586914,
+      "estimated_bpm": 11.842105263157896,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0038",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.328073501586914,
+      "estimated_bpm": 12.162162162162161,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0038",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.328073501586914,
+      "estimated_bpm": 11.847182273864746,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0039",
+      "method": "welch",
+      "reference_bpm": 15.959921836853027,
+      "estimated_bpm": 16.259765625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0039",
+      "method": "autocorrelation",
+      "reference_bpm": 15.959921836853027,
+      "estimated_bpm": 15.789473684210526,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0039",
+      "method": "peaks",
+      "reference_bpm": 15.959921836853027,
+      "estimated_bpm": 15.929203539823009,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0039",
+      "method": "agreement_fusion",
+      "reference_bpm": 15.959921836853027,
+      "estimated_bpm": 15.929203539823009,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0039",
+      "method": "temporal_cnn",
+      "reference_bpm": 15.959921836853027,
+      "estimated_bpm": 15.702465057373047,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0040",
+      "method": "welch",
+      "reference_bpm": 8.270027160644531,
+      "estimated_bpm": 7.470703125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0040",
+      "method": "autocorrelation",
+      "reference_bpm": 8.270027160644531,
+      "estimated_bpm": 8.108108108108109,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0040",
+      "method": "peaks",
+      "reference_bpm": 8.270027160644531,
+      "estimated_bpm": null,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0040",
+      "method": "agreement_fusion",
+      "reference_bpm": 8.270027160644531,
+      "estimated_bpm": 7.789405616554054,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0040",
+      "method": "temporal_cnn",
+      "reference_bpm": 8.270027160644531,
+      "estimated_bpm": 8.492868423461914,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0041",
+      "method": "welch",
+      "reference_bpm": 9.311041831970215,
+      "estimated_bpm": 8.7890625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0041",
+      "method": "autocorrelation",
+      "reference_bpm": 9.311041831970215,
+      "estimated_bpm": 9.183673469387756,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0041",
+      "method": "peaks",
+      "reference_bpm": 9.311041831970215,
+      "estimated_bpm": 9.375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0041",
+      "method": "agreement_fusion",
+      "reference_bpm": 9.311041831970215,
+      "estimated_bpm": 9.183673469387756,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0041",
+      "method": "temporal_cnn",
+      "reference_bpm": 9.311041831970215,
+      "estimated_bpm": 9.857707977294922,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0042",
+      "method": "welch",
+      "reference_bpm": 34.50431823730469,
+      "estimated_bpm": 34.27734375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0042",
+      "method": "autocorrelation",
+      "reference_bpm": 34.50431823730469,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0042",
+      "method": "peaks",
+      "reference_bpm": 34.50431823730469,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0042",
+      "method": "agreement_fusion",
+      "reference_bpm": 34.50431823730469,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0042",
+      "method": "temporal_cnn",
+      "reference_bpm": 34.50431823730469,
+      "estimated_bpm": 34.05062484741211,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0043",
+      "method": "welch",
+      "reference_bpm": 13.379920959472656,
+      "estimated_bpm": 13.18359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0043",
+      "method": "autocorrelation",
+      "reference_bpm": 13.379920959472656,
+      "estimated_bpm": 13.235294117647058,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0043",
+      "method": "peaks",
+      "reference_bpm": 13.379920959472656,
+      "estimated_bpm": 13.23529411764706,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0043",
+      "method": "agreement_fusion",
+      "reference_bpm": 13.379920959472656,
+      "estimated_bpm": 13.235294117647058,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0043",
+      "method": "temporal_cnn",
+      "reference_bpm": 13.379920959472656,
+      "estimated_bpm": 12.895662307739258,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0044",
+      "method": "welch",
+      "reference_bpm": 27.43671417236328,
+      "estimated_bpm": 27.24609375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0044",
+      "method": "autocorrelation",
+      "reference_bpm": 27.43671417236328,
+      "estimated_bpm": 27.272727272727273,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0044",
+      "method": "peaks",
+      "reference_bpm": 27.43671417236328,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0044",
+      "method": "agreement_fusion",
+      "reference_bpm": 27.43671417236328,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0044",
+      "method": "temporal_cnn",
+      "reference_bpm": 27.43671417236328,
+      "estimated_bpm": 27.57536506652832,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0045",
+      "method": "welch",
+      "reference_bpm": 35.470703125,
+      "estimated_bpm": 35.595703125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0045",
+      "method": "autocorrelation",
+      "reference_bpm": 35.470703125,
+      "estimated_bpm": 36.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0045",
+      "method": "peaks",
+      "reference_bpm": 35.470703125,
+      "estimated_bpm": 36.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0045",
+      "method": "agreement_fusion",
+      "reference_bpm": 35.470703125,
+      "estimated_bpm": 36.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0045",
+      "method": "temporal_cnn",
+      "reference_bpm": 35.470703125,
+      "estimated_bpm": 36.3262825012207,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0046",
+      "method": "welch",
+      "reference_bpm": 16.968463897705078,
+      "estimated_bpm": 17.138671875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0046",
+      "method": "autocorrelation",
+      "reference_bpm": 16.968463897705078,
+      "estimated_bpm": 16.666666666666668,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0046",
+      "method": "peaks",
+      "reference_bpm": 16.968463897705078,
+      "estimated_bpm": 16.9811320754717,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0046",
+      "method": "agreement_fusion",
+      "reference_bpm": 16.968463897705078,
+      "estimated_bpm": 16.9811320754717,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0046",
+      "method": "temporal_cnn",
+      "reference_bpm": 16.968463897705078,
+      "estimated_bpm": 17.321319580078125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0047",
+      "method": "welch",
+      "reference_bpm": 11.533821105957031,
+      "estimated_bpm": 11.42578125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0047",
+      "method": "autocorrelation",
+      "reference_bpm": 11.533821105957031,
+      "estimated_bpm": 11.538461538461538,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0047",
+      "method": "peaks",
+      "reference_bpm": 11.533821105957031,
+      "estimated_bpm": 11.538461538461538,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0047",
+      "method": "agreement_fusion",
+      "reference_bpm": 11.533821105957031,
+      "estimated_bpm": 11.538461538461538,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0047",
+      "method": "temporal_cnn",
+      "reference_bpm": 11.533821105957031,
+      "estimated_bpm": 11.560955047607422,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0048",
+      "method": "welch",
+      "reference_bpm": 24.038183212280273,
+      "estimated_bpm": 24.169921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0048",
+      "method": "autocorrelation",
+      "reference_bpm": 24.038183212280273,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0048",
+      "method": "peaks",
+      "reference_bpm": 24.038183212280273,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0048",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.038183212280273,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0048",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.038183212280273,
+      "estimated_bpm": 24.773500442504883,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0049",
+      "method": "welch",
+      "reference_bpm": 32.60951614379883,
+      "estimated_bpm": 32.51953125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0049",
+      "method": "autocorrelation",
+      "reference_bpm": 32.60951614379883,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0049",
+      "method": "peaks",
+      "reference_bpm": 32.60951614379883,
+      "estimated_bpm": 32.14285714285714,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0049",
+      "method": "agreement_fusion",
+      "reference_bpm": 32.60951614379883,
+      "estimated_bpm": 32.51953125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0049",
+      "method": "temporal_cnn",
+      "reference_bpm": 32.60951614379883,
+      "estimated_bpm": 32.55852508544922,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0050",
+      "method": "welch",
+      "reference_bpm": 12.546273231506348,
+      "estimated_bpm": 12.3046875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0050",
+      "method": "autocorrelation",
+      "reference_bpm": 12.546273231506348,
+      "estimated_bpm": 12.32876712328767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0050",
+      "method": "peaks",
+      "reference_bpm": 12.546273231506348,
+      "estimated_bpm": 12.5,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0050",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.546273231506348,
+      "estimated_bpm": 12.32876712328767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0050",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.546273231506348,
+      "estimated_bpm": 12.42557144165039,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0051",
+      "method": "welch",
+      "reference_bpm": 11.093092918395996,
+      "estimated_bpm": 10.986328125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0051",
+      "method": "autocorrelation",
+      "reference_bpm": 11.093092918395996,
+      "estimated_bpm": 10.843373493975903,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0051",
+      "method": "peaks",
+      "reference_bpm": 11.093092918395996,
+      "estimated_bpm": 10.843373493975903,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0051",
+      "method": "agreement_fusion",
+      "reference_bpm": 11.093092918395996,
+      "estimated_bpm": 10.843373493975903,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0051",
+      "method": "temporal_cnn",
+      "reference_bpm": 11.093092918395996,
+      "estimated_bpm": 10.629471778869629,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0052",
+      "method": "welch",
+      "reference_bpm": 20.72890853881836,
+      "estimated_bpm": 20.654296875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0052",
+      "method": "autocorrelation",
+      "reference_bpm": 20.72890853881836,
+      "estimated_bpm": 20.454545454545453,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0052",
+      "method": "peaks",
+      "reference_bpm": 20.72890853881836,
+      "estimated_bpm": 20.224719101123593,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0052",
+      "method": "agreement_fusion",
+      "reference_bpm": 20.72890853881836,
+      "estimated_bpm": 20.454545454545453,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0052",
+      "method": "temporal_cnn",
+      "reference_bpm": 20.72890853881836,
+      "estimated_bpm": 21.109020233154297,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0053",
+      "method": "welch",
+      "reference_bpm": 27.224489212036133,
+      "estimated_bpm": 27.24609375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0053",
+      "method": "autocorrelation",
+      "reference_bpm": 27.224489212036133,
+      "estimated_bpm": 27.272727272727273,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0053",
+      "method": "peaks",
+      "reference_bpm": 27.224489212036133,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0053",
+      "method": "agreement_fusion",
+      "reference_bpm": 27.224489212036133,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0053",
+      "method": "temporal_cnn",
+      "reference_bpm": 27.224489212036133,
+      "estimated_bpm": 27.06854820251465,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0054",
+      "method": "welch",
+      "reference_bpm": 11.17195987701416,
+      "estimated_bpm": 10.986328125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0054",
+      "method": "autocorrelation",
+      "reference_bpm": 11.17195987701416,
+      "estimated_bpm": 11.25,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0054",
+      "method": "peaks",
+      "reference_bpm": 11.17195987701416,
+      "estimated_bpm": 11.11111111111111,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0054",
+      "method": "agreement_fusion",
+      "reference_bpm": 11.17195987701416,
+      "estimated_bpm": 11.11111111111111,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0054",
+      "method": "temporal_cnn",
+      "reference_bpm": 11.17195987701416,
+      "estimated_bpm": 11.137552261352539,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0055",
+      "method": "welch",
+      "reference_bpm": 29.449573516845703,
+      "estimated_bpm": 29.443359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0055",
+      "method": "autocorrelation",
+      "reference_bpm": 29.449573516845703,
+      "estimated_bpm": 29.032258064516128,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0055",
+      "method": "peaks",
+      "reference_bpm": 29.449573516845703,
+      "estimated_bpm": 29.032258064516125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0055",
+      "method": "agreement_fusion",
+      "reference_bpm": 29.449573516845703,
+      "estimated_bpm": 29.032258064516128,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0055",
+      "method": "temporal_cnn",
+      "reference_bpm": 29.449573516845703,
+      "estimated_bpm": 29.18128204345703,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0056",
+      "method": "welch",
+      "reference_bpm": 12.903581619262695,
+      "estimated_bpm": 12.744140625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0056",
+      "method": "autocorrelation",
+      "reference_bpm": 12.903581619262695,
+      "estimated_bpm": 12.67605633802817,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0056",
+      "method": "peaks",
+      "reference_bpm": 12.903581619262695,
+      "estimated_bpm": 12.857142857142856,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0056",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.903581619262695,
+      "estimated_bpm": 12.744140625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0056",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.903581619262695,
+      "estimated_bpm": 12.611129760742188,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0057",
+      "method": "welch",
+      "reference_bpm": 12.208367347717285,
+      "estimated_bpm": 11.865234375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0057",
+      "method": "autocorrelation",
+      "reference_bpm": 12.208367347717285,
+      "estimated_bpm": 12.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0057",
+      "method": "peaks",
+      "reference_bpm": 12.208367347717285,
+      "estimated_bpm": 12.328767123287673,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0057",
+      "method": "agreement_fusion",
+      "reference_bpm": 12.208367347717285,
+      "estimated_bpm": 12.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0057",
+      "method": "temporal_cnn",
+      "reference_bpm": 12.208367347717285,
+      "estimated_bpm": 12.064371109008789,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0058",
+      "method": "welch",
+      "reference_bpm": 24.5399169921875,
+      "estimated_bpm": 24.609375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0058",
+      "method": "autocorrelation",
+      "reference_bpm": 24.5399169921875,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0058",
+      "method": "peaks",
+      "reference_bpm": 24.5399169921875,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0058",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.5399169921875,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0058",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.5399169921875,
+      "estimated_bpm": 24.951684951782227,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0059",
+      "method": "welch",
+      "reference_bpm": 28.384042739868164,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0059",
+      "method": "autocorrelation",
+      "reference_bpm": 28.384042739868164,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0059",
+      "method": "peaks",
+      "reference_bpm": 28.384042739868164,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0059",
+      "method": "agreement_fusion",
+      "reference_bpm": 28.384042739868164,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0059",
+      "method": "temporal_cnn",
+      "reference_bpm": 28.384042739868164,
+      "estimated_bpm": 30.383148193359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0060",
+      "method": "welch",
+      "reference_bpm": 18.089387893676758,
+      "estimated_bpm": 18.017578125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0060",
+      "method": "autocorrelation",
+      "reference_bpm": 18.089387893676758,
+      "estimated_bpm": 18.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0060",
+      "method": "peaks",
+      "reference_bpm": 18.089387893676758,
+      "estimated_bpm": 18.367346938775512,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0060",
+      "method": "agreement_fusion",
+      "reference_bpm": 18.089387893676758,
+      "estimated_bpm": 18.017578125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0060",
+      "method": "temporal_cnn",
+      "reference_bpm": 18.089387893676758,
+      "estimated_bpm": 17.99016761779785,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0061",
+      "method": "welch",
+      "reference_bpm": 34.853126525878906,
+      "estimated_bpm": 34.716796875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0061",
+      "method": "autocorrelation",
+      "reference_bpm": 34.853126525878906,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0061",
+      "method": "peaks",
+      "reference_bpm": 34.853126525878906,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0061",
+      "method": "agreement_fusion",
+      "reference_bpm": 34.853126525878906,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0061",
+      "method": "temporal_cnn",
+      "reference_bpm": 34.853126525878906,
+      "estimated_bpm": 35.553958892822266,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0062",
+      "method": "welch",
+      "reference_bpm": 20.68819808959961,
+      "estimated_bpm": 20.654296875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0062",
+      "method": "autocorrelation",
+      "reference_bpm": 20.68819808959961,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0062",
+      "method": "peaks",
+      "reference_bpm": 20.68819808959961,
+      "estimated_bpm": 20.454545454545457,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0062",
+      "method": "agreement_fusion",
+      "reference_bpm": 20.68819808959961,
+      "estimated_bpm": 20.654296875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0062",
+      "method": "temporal_cnn",
+      "reference_bpm": 20.68819808959961,
+      "estimated_bpm": 21.09574317932129,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0063",
+      "method": "welch",
+      "reference_bpm": 26.022544860839844,
+      "estimated_bpm": 25.927734375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0063",
+      "method": "autocorrelation",
+      "reference_bpm": 26.022544860839844,
+      "estimated_bpm": 25.714285714285715,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0063",
+      "method": "peaks",
+      "reference_bpm": 26.022544860839844,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0063",
+      "method": "agreement_fusion",
+      "reference_bpm": 26.022544860839844,
+      "estimated_bpm": 25.714285714285715,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0063",
+      "method": "temporal_cnn",
+      "reference_bpm": 26.022544860839844,
+      "estimated_bpm": 25.675718307495117,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0064",
+      "method": "welch",
+      "reference_bpm": 28.596933364868164,
+      "estimated_bpm": 28.564453125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0064",
+      "method": "autocorrelation",
+      "reference_bpm": 28.596933364868164,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0064",
+      "method": "peaks",
+      "reference_bpm": 28.596933364868164,
+      "estimated_bpm": 28.57142857142857,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0064",
+      "method": "agreement_fusion",
+      "reference_bpm": 28.596933364868164,
+      "estimated_bpm": 28.564453125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0064",
+      "method": "temporal_cnn",
+      "reference_bpm": 28.596933364868164,
+      "estimated_bpm": 28.45506477355957,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0065",
+      "method": "welch",
+      "reference_bpm": 17.127952575683594,
+      "estimated_bpm": 17.138671875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0065",
+      "method": "autocorrelation",
+      "reference_bpm": 17.127952575683594,
+      "estimated_bpm": 17.307692307692307,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0065",
+      "method": "peaks",
+      "reference_bpm": 17.127952575683594,
+      "estimated_bpm": 16.9811320754717,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0065",
+      "method": "agreement_fusion",
+      "reference_bpm": 17.127952575683594,
+      "estimated_bpm": 17.138671875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0065",
+      "method": "temporal_cnn",
+      "reference_bpm": 17.127952575683594,
+      "estimated_bpm": 17.839292526245117,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0066",
+      "method": "welch",
+      "reference_bpm": 21.61928367614746,
+      "estimated_bpm": 21.533203125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0066",
+      "method": "autocorrelation",
+      "reference_bpm": 21.61928367614746,
+      "estimated_bpm": 21.428571428571427,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0066",
+      "method": "peaks",
+      "reference_bpm": 21.61928367614746,
+      "estimated_bpm": 21.42857142857143,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0066",
+      "method": "agreement_fusion",
+      "reference_bpm": 21.61928367614746,
+      "estimated_bpm": 21.42857142857143,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0066",
+      "method": "temporal_cnn",
+      "reference_bpm": 21.61928367614746,
+      "estimated_bpm": 21.94605827331543,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0067",
+      "method": "welch",
+      "reference_bpm": 25.554351806640625,
+      "estimated_bpm": 25.48828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0067",
+      "method": "autocorrelation",
+      "reference_bpm": 25.554351806640625,
+      "estimated_bpm": 25.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0067",
+      "method": "peaks",
+      "reference_bpm": 25.554351806640625,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0067",
+      "method": "agreement_fusion",
+      "reference_bpm": 25.554351806640625,
+      "estimated_bpm": 25.48828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0067",
+      "method": "temporal_cnn",
+      "reference_bpm": 25.554351806640625,
+      "estimated_bpm": 25.69346046447754,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0068",
+      "method": "welch",
+      "reference_bpm": 26.33679962158203,
+      "estimated_bpm": 26.3671875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0068",
+      "method": "autocorrelation",
+      "reference_bpm": 26.33679962158203,
+      "estimated_bpm": 26.470588235294116,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0068",
+      "method": "peaks",
+      "reference_bpm": 26.33679962158203,
+      "estimated_bpm": 26.47058823529412,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0068",
+      "method": "agreement_fusion",
+      "reference_bpm": 26.33679962158203,
+      "estimated_bpm": 26.470588235294116,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0068",
+      "method": "temporal_cnn",
+      "reference_bpm": 26.33679962158203,
+      "estimated_bpm": 25.665956497192383,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0069",
+      "method": "welch",
+      "reference_bpm": 13.262898445129395,
+      "estimated_bpm": 13.18359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0069",
+      "method": "autocorrelation",
+      "reference_bpm": 13.262898445129395,
+      "estimated_bpm": 13.043478260869565,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0069",
+      "method": "peaks",
+      "reference_bpm": 13.262898445129395,
+      "estimated_bpm": 13.23529411764706,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0069",
+      "method": "agreement_fusion",
+      "reference_bpm": 13.262898445129395,
+      "estimated_bpm": 13.18359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0069",
+      "method": "temporal_cnn",
+      "reference_bpm": 13.262898445129395,
+      "estimated_bpm": 13.580520629882812,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0070",
+      "method": "welch",
+      "reference_bpm": 30.5600528717041,
+      "estimated_bpm": 30.322265625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0070",
+      "method": "autocorrelation",
+      "reference_bpm": 30.5600528717041,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0070",
+      "method": "peaks",
+      "reference_bpm": 30.5600528717041,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0070",
+      "method": "agreement_fusion",
+      "reference_bpm": 30.5600528717041,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0070",
+      "method": "temporal_cnn",
+      "reference_bpm": 30.5600528717041,
+      "estimated_bpm": 31.005109786987305,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0071",
+      "method": "welch",
+      "reference_bpm": 34.04393005371094,
+      "estimated_bpm": 34.27734375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0071",
+      "method": "autocorrelation",
+      "reference_bpm": 34.04393005371094,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0071",
+      "method": "peaks",
+      "reference_bpm": 34.04393005371094,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0071",
+      "method": "agreement_fusion",
+      "reference_bpm": 34.04393005371094,
+      "estimated_bpm": 34.61538461538461,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0071",
+      "method": "temporal_cnn",
+      "reference_bpm": 34.04393005371094,
+      "estimated_bpm": 33.042903900146484,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0072",
+      "method": "welch",
+      "reference_bpm": 15.0113525390625,
+      "estimated_bpm": 14.94140625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0072",
+      "method": "autocorrelation",
+      "reference_bpm": 15.0113525390625,
+      "estimated_bpm": 15.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0072",
+      "method": "peaks",
+      "reference_bpm": 15.0113525390625,
+      "estimated_bpm": 15.126050420168067,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0072",
+      "method": "agreement_fusion",
+      "reference_bpm": 15.0113525390625,
+      "estimated_bpm": 15.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0072",
+      "method": "temporal_cnn",
+      "reference_bpm": 15.0113525390625,
+      "estimated_bpm": 14.311037063598633,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0073",
+      "method": "welch",
+      "reference_bpm": 25.499025344848633,
+      "estimated_bpm": 25.48828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0073",
+      "method": "autocorrelation",
+      "reference_bpm": 25.499025344848633,
+      "estimated_bpm": 25.714285714285715,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0073",
+      "method": "peaks",
+      "reference_bpm": 25.499025344848633,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0073",
+      "method": "agreement_fusion",
+      "reference_bpm": 25.499025344848633,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0073",
+      "method": "temporal_cnn",
+      "reference_bpm": 25.499025344848633,
+      "estimated_bpm": 24.837175369262695,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0074",
+      "method": "welch",
+      "reference_bpm": 11.837381362915039,
+      "estimated_bpm": 11.865234375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0074",
+      "method": "autocorrelation",
+      "reference_bpm": 11.837381362915039,
+      "estimated_bpm": 11.842105263157896,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0074",
+      "method": "peaks",
+      "reference_bpm": 11.837381362915039,
+      "estimated_bpm": 11.688311688311687,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0074",
+      "method": "agreement_fusion",
+      "reference_bpm": 11.837381362915039,
+      "estimated_bpm": 11.842105263157896,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0074",
+      "method": "temporal_cnn",
+      "reference_bpm": 11.837381362915039,
+      "estimated_bpm": 12.3710355758667,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0075",
+      "method": "welch",
+      "reference_bpm": 31.245887756347656,
+      "estimated_bpm": 31.201171875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0075",
+      "method": "autocorrelation",
+      "reference_bpm": 31.245887756347656,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0075",
+      "method": "peaks",
+      "reference_bpm": 31.245887756347656,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0075",
+      "method": "agreement_fusion",
+      "reference_bpm": 31.245887756347656,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0075",
+      "method": "temporal_cnn",
+      "reference_bpm": 31.245887756347656,
+      "estimated_bpm": 32.255828857421875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0076",
+      "method": "welch",
+      "reference_bpm": 21.865867614746094,
+      "estimated_bpm": 21.97265625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0076",
+      "method": "autocorrelation",
+      "reference_bpm": 21.865867614746094,
+      "estimated_bpm": 21.951219512195124,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0076",
+      "method": "peaks",
+      "reference_bpm": 21.865867614746094,
+      "estimated_bpm": 21.95121951219512,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0076",
+      "method": "agreement_fusion",
+      "reference_bpm": 21.865867614746094,
+      "estimated_bpm": 21.951219512195124,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0076",
+      "method": "temporal_cnn",
+      "reference_bpm": 21.865867614746094,
+      "estimated_bpm": 21.35191535949707,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0077",
+      "method": "welch",
+      "reference_bpm": 11.164581298828125,
+      "estimated_bpm": 10.986328125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0077",
+      "method": "autocorrelation",
+      "reference_bpm": 11.164581298828125,
+      "estimated_bpm": 11.11111111111111,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0077",
+      "method": "peaks",
+      "reference_bpm": 11.164581298828125,
+      "estimated_bpm": 11.11111111111111,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0077",
+      "method": "agreement_fusion",
+      "reference_bpm": 11.164581298828125,
+      "estimated_bpm": 11.11111111111111,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0077",
+      "method": "temporal_cnn",
+      "reference_bpm": 11.164581298828125,
+      "estimated_bpm": 11.135848045349121,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0078",
+      "method": "welch",
+      "reference_bpm": 19.33696937561035,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0078",
+      "method": "autocorrelation",
+      "reference_bpm": 19.33696937561035,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0078",
+      "method": "peaks",
+      "reference_bpm": 19.33696937561035,
+      "estimated_bpm": 19.565217391304348,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0078",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.33696937561035,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0078",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.33696937561035,
+      "estimated_bpm": 19.890928268432617,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0079",
+      "method": "welch",
+      "reference_bpm": 18.757308959960938,
+      "estimated_bpm": 18.896484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0079",
+      "method": "autocorrelation",
+      "reference_bpm": 18.757308959960938,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0079",
+      "method": "peaks",
+      "reference_bpm": 18.757308959960938,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0079",
+      "method": "agreement_fusion",
+      "reference_bpm": 18.757308959960938,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0079",
+      "method": "temporal_cnn",
+      "reference_bpm": 18.757308959960938,
+      "estimated_bpm": 18.10122299194336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0080",
+      "method": "welch",
+      "reference_bpm": 27.222501754760742,
+      "estimated_bpm": 27.24609375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0080",
+      "method": "autocorrelation",
+      "reference_bpm": 27.222501754760742,
+      "estimated_bpm": 27.272727272727273,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0080",
+      "method": "peaks",
+      "reference_bpm": 27.222501754760742,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0080",
+      "method": "agreement_fusion",
+      "reference_bpm": 27.222501754760742,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0080",
+      "method": "temporal_cnn",
+      "reference_bpm": 27.222501754760742,
+      "estimated_bpm": 26.882783889770508,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0081",
+      "method": "welch",
+      "reference_bpm": 26.72348403930664,
+      "estimated_bpm": 26.806640625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0081",
+      "method": "autocorrelation",
+      "reference_bpm": 26.72348403930664,
+      "estimated_bpm": 26.470588235294116,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0081",
+      "method": "peaks",
+      "reference_bpm": 26.72348403930664,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0081",
+      "method": "agreement_fusion",
+      "reference_bpm": 26.72348403930664,
+      "estimated_bpm": 26.806640625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0081",
+      "method": "temporal_cnn",
+      "reference_bpm": 26.72348403930664,
+      "estimated_bpm": 27.779897689819336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0082",
+      "method": "welch",
+      "reference_bpm": 30.54032325744629,
+      "estimated_bpm": 30.76171875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0082",
+      "method": "autocorrelation",
+      "reference_bpm": 30.54032325744629,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0082",
+      "method": "peaks",
+      "reference_bpm": 30.54032325744629,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0082",
+      "method": "agreement_fusion",
+      "reference_bpm": 30.54032325744629,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0082",
+      "method": "temporal_cnn",
+      "reference_bpm": 30.54032325744629,
+      "estimated_bpm": 30.892627716064453,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0083",
+      "method": "welch",
+      "reference_bpm": 22.893545150756836,
+      "estimated_bpm": 22.8515625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0083",
+      "method": "autocorrelation",
+      "reference_bpm": 22.893545150756836,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0083",
+      "method": "peaks",
+      "reference_bpm": 22.893545150756836,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0083",
+      "method": "agreement_fusion",
+      "reference_bpm": 22.893545150756836,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0083",
+      "method": "temporal_cnn",
+      "reference_bpm": 22.893545150756836,
+      "estimated_bpm": 22.879554748535156,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0084",
+      "method": "welch",
+      "reference_bpm": 9.996587753295898,
+      "estimated_bpm": 9.66796875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0084",
+      "method": "autocorrelation",
+      "reference_bpm": 9.996587753295898,
+      "estimated_bpm": 10.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0084",
+      "method": "peaks",
+      "reference_bpm": 9.996587753295898,
+      "estimated_bpm": 9.62566844919786,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0084",
+      "method": "agreement_fusion",
+      "reference_bpm": 9.996587753295898,
+      "estimated_bpm": 9.66796875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0084",
+      "method": "temporal_cnn",
+      "reference_bpm": 9.996587753295898,
+      "estimated_bpm": 10.401861190795898,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0085",
+      "method": "welch",
+      "reference_bpm": 14.270748138427734,
+      "estimated_bpm": 14.501953125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0085",
+      "method": "autocorrelation",
+      "reference_bpm": 14.270748138427734,
+      "estimated_bpm": 14.0625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0085",
+      "method": "peaks",
+      "reference_bpm": 14.270748138427734,
+      "estimated_bpm": 14.0625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0085",
+      "method": "agreement_fusion",
+      "reference_bpm": 14.270748138427734,
+      "estimated_bpm": 14.0625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0085",
+      "method": "temporal_cnn",
+      "reference_bpm": 14.270748138427734,
+      "estimated_bpm": 14.372238159179688,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0086",
+      "method": "welch",
+      "reference_bpm": 23.155921936035156,
+      "estimated_bpm": 23.291015625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0086",
+      "method": "autocorrelation",
+      "reference_bpm": 23.155921936035156,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0086",
+      "method": "peaks",
+      "reference_bpm": 23.155921936035156,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0086",
+      "method": "agreement_fusion",
+      "reference_bpm": 23.155921936035156,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0086",
+      "method": "temporal_cnn",
+      "reference_bpm": 23.155921936035156,
+      "estimated_bpm": 23.74382972717285,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0087",
+      "method": "welch",
+      "reference_bpm": 18.3770809173584,
+      "estimated_bpm": 18.45703125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0087",
+      "method": "autocorrelation",
+      "reference_bpm": 18.3770809173584,
+      "estimated_bpm": 18.367346938775512,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0087",
+      "method": "peaks",
+      "reference_bpm": 18.3770809173584,
+      "estimated_bpm": 18.367346938775512,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0087",
+      "method": "agreement_fusion",
+      "reference_bpm": 18.3770809173584,
+      "estimated_bpm": 18.367346938775512,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0087",
+      "method": "temporal_cnn",
+      "reference_bpm": 18.3770809173584,
+      "estimated_bpm": 18.261999130249023,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0088",
+      "method": "welch",
+      "reference_bpm": 17.444421768188477,
+      "estimated_bpm": 17.578125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0088",
+      "method": "autocorrelation",
+      "reference_bpm": 17.444421768188477,
+      "estimated_bpm": 17.647058823529413,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0088",
+      "method": "peaks",
+      "reference_bpm": 17.444421768188477,
+      "estimated_bpm": 17.307692307692307,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0088",
+      "method": "agreement_fusion",
+      "reference_bpm": 17.444421768188477,
+      "estimated_bpm": 17.578125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0088",
+      "method": "temporal_cnn",
+      "reference_bpm": 17.444421768188477,
+      "estimated_bpm": 17.755189895629883,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0089",
+      "method": "welch",
+      "reference_bpm": 19.001262664794922,
+      "estimated_bpm": 18.896484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0089",
+      "method": "autocorrelation",
+      "reference_bpm": 19.001262664794922,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0089",
+      "method": "peaks",
+      "reference_bpm": 19.001262664794922,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0089",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.001262664794922,
+      "estimated_bpm": 18.896484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0089",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.001262664794922,
+      "estimated_bpm": 18.5682430267334,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0090",
+      "method": "welch",
+      "reference_bpm": 31.183534622192383,
+      "estimated_bpm": 31.201171875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0090",
+      "method": "autocorrelation",
+      "reference_bpm": 31.183534622192383,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0090",
+      "method": "peaks",
+      "reference_bpm": 31.183534622192383,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0090",
+      "method": "agreement_fusion",
+      "reference_bpm": 31.183534622192383,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0090",
+      "method": "temporal_cnn",
+      "reference_bpm": 31.183534622192383,
+      "estimated_bpm": 32.86970901489258,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0091",
+      "method": "welch",
+      "reference_bpm": 15.534478187561035,
+      "estimated_bpm": 15.8203125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0091",
+      "method": "autocorrelation",
+      "reference_bpm": 15.534478187561035,
+      "estimated_bpm": 15.517241379310345,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0091",
+      "method": "peaks",
+      "reference_bpm": 15.534478187561035,
+      "estimated_bpm": 15.517241379310345,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0091",
+      "method": "agreement_fusion",
+      "reference_bpm": 15.534478187561035,
+      "estimated_bpm": 15.517241379310345,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0091",
+      "method": "temporal_cnn",
+      "reference_bpm": 15.534478187561035,
+      "estimated_bpm": 15.005675315856934,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0092",
+      "method": "welch",
+      "reference_bpm": 16.141536712646484,
+      "estimated_bpm": 16.259765625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0092",
+      "method": "autocorrelation",
+      "reference_bpm": 16.141536712646484,
+      "estimated_bpm": 16.071428571428573,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0092",
+      "method": "peaks",
+      "reference_bpm": 16.141536712646484,
+      "estimated_bpm": 16.07142857142857,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0092",
+      "method": "agreement_fusion",
+      "reference_bpm": 16.141536712646484,
+      "estimated_bpm": 16.071428571428573,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0092",
+      "method": "temporal_cnn",
+      "reference_bpm": 16.141536712646484,
+      "estimated_bpm": 16.225969314575195,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0093",
+      "method": "welch",
+      "reference_bpm": 16.756460189819336,
+      "estimated_bpm": 16.69921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0093",
+      "method": "autocorrelation",
+      "reference_bpm": 16.756460189819336,
+      "estimated_bpm": 16.666666666666668,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0093",
+      "method": "peaks",
+      "reference_bpm": 16.756460189819336,
+      "estimated_bpm": 16.9811320754717,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0093",
+      "method": "agreement_fusion",
+      "reference_bpm": 16.756460189819336,
+      "estimated_bpm": 16.69921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0093",
+      "method": "temporal_cnn",
+      "reference_bpm": 16.756460189819336,
+      "estimated_bpm": 16.764572143554688,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0094",
+      "method": "welch",
+      "reference_bpm": 23.34003257751465,
+      "estimated_bpm": 23.291015625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0094",
+      "method": "autocorrelation",
+      "reference_bpm": 23.34003257751465,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0094",
+      "method": "peaks",
+      "reference_bpm": 23.34003257751465,
+      "estimated_bpm": 23.68421052631579,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0094",
+      "method": "agreement_fusion",
+      "reference_bpm": 23.34003257751465,
+      "estimated_bpm": 23.291015625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0094",
+      "method": "temporal_cnn",
+      "reference_bpm": 23.34003257751465,
+      "estimated_bpm": 24.517353057861328,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0095",
+      "method": "welch",
+      "reference_bpm": 27.963844299316406,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0095",
+      "method": "autocorrelation",
+      "reference_bpm": 27.963844299316406,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0095",
+      "method": "peaks",
+      "reference_bpm": 27.963844299316406,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0095",
+      "method": "agreement_fusion",
+      "reference_bpm": 27.963844299316406,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0095",
+      "method": "temporal_cnn",
+      "reference_bpm": 27.963844299316406,
+      "estimated_bpm": 27.725053787231445,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0096",
+      "method": "welch",
+      "reference_bpm": 10.490388870239258,
+      "estimated_bpm": 10.107421875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0096",
+      "method": "autocorrelation",
+      "reference_bpm": 10.490388870239258,
+      "estimated_bpm": 10.344827586206897,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0096",
+      "method": "peaks",
+      "reference_bpm": 10.490388870239258,
+      "estimated_bpm": 10.404624277456648,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0096",
+      "method": "agreement_fusion",
+      "reference_bpm": 10.490388870239258,
+      "estimated_bpm": 10.344827586206897,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0096",
+      "method": "temporal_cnn",
+      "reference_bpm": 10.490388870239258,
+      "estimated_bpm": 11.16030502319336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0097",
+      "method": "welch",
+      "reference_bpm": 32.02657699584961,
+      "estimated_bpm": 32.080078125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0097",
+      "method": "autocorrelation",
+      "reference_bpm": 32.02657699584961,
+      "estimated_bpm": 32.142857142857146,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0097",
+      "method": "peaks",
+      "reference_bpm": 32.02657699584961,
+      "estimated_bpm": 32.14285714285714,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0097",
+      "method": "agreement_fusion",
+      "reference_bpm": 32.02657699584961,
+      "estimated_bpm": 32.14285714285714,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0097",
+      "method": "temporal_cnn",
+      "reference_bpm": 32.02657699584961,
+      "estimated_bpm": 32.54862594604492,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0098",
+      "method": "welch",
+      "reference_bpm": 20.32615089416504,
+      "estimated_bpm": 20.21484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0098",
+      "method": "autocorrelation",
+      "reference_bpm": 20.32615089416504,
+      "estimated_bpm": 20.454545454545453,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0098",
+      "method": "peaks",
+      "reference_bpm": 20.32615089416504,
+      "estimated_bpm": 20.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0098",
+      "method": "agreement_fusion",
+      "reference_bpm": 20.32615089416504,
+      "estimated_bpm": 20.21484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0098",
+      "method": "temporal_cnn",
+      "reference_bpm": 20.32615089416504,
+      "estimated_bpm": 20.12616539001465,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0099",
+      "method": "welch",
+      "reference_bpm": 10.759527206420898,
+      "estimated_bpm": 10.546875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0099",
+      "method": "autocorrelation",
+      "reference_bpm": 10.759527206420898,
+      "estimated_bpm": 10.588235294117647,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0099",
+      "method": "peaks",
+      "reference_bpm": 10.759527206420898,
+      "estimated_bpm": 10.169491525423728,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0099",
+      "method": "agreement_fusion",
+      "reference_bpm": 10.759527206420898,
+      "estimated_bpm": 10.546875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0099",
+      "method": "temporal_cnn",
+      "reference_bpm": 10.759527206420898,
+      "estimated_bpm": 10.624537467956543,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0100",
+      "method": "welch",
+      "reference_bpm": 29.084230422973633,
+      "estimated_bpm": 29.00390625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0100",
+      "method": "autocorrelation",
+      "reference_bpm": 29.084230422973633,
+      "estimated_bpm": 29.032258064516128,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0100",
+      "method": "peaks",
+      "reference_bpm": 29.084230422973633,
+      "estimated_bpm": 29.032258064516125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0100",
+      "method": "agreement_fusion",
+      "reference_bpm": 29.084230422973633,
+      "estimated_bpm": 29.032258064516125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0100",
+      "method": "temporal_cnn",
+      "reference_bpm": 29.084230422973633,
+      "estimated_bpm": 28.611370086669922,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0101",
+      "method": "welch",
+      "reference_bpm": 29.968442916870117,
+      "estimated_bpm": 29.8828125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0101",
+      "method": "autocorrelation",
+      "reference_bpm": 29.968442916870117,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0101",
+      "method": "peaks",
+      "reference_bpm": 29.968442916870117,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0101",
+      "method": "agreement_fusion",
+      "reference_bpm": 29.968442916870117,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0101",
+      "method": "temporal_cnn",
+      "reference_bpm": 29.968442916870117,
+      "estimated_bpm": 29.07246971130371,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0102",
+      "method": "welch",
+      "reference_bpm": 15.776556015014648,
+      "estimated_bpm": 15.8203125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0102",
+      "method": "autocorrelation",
+      "reference_bpm": 15.776556015014648,
+      "estimated_bpm": 15.789473684210526,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0102",
+      "method": "peaks",
+      "reference_bpm": 15.776556015014648,
+      "estimated_bpm": 15.789473684210527,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0102",
+      "method": "agreement_fusion",
+      "reference_bpm": 15.776556015014648,
+      "estimated_bpm": 15.789473684210527,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0102",
+      "method": "temporal_cnn",
+      "reference_bpm": 15.776556015014648,
+      "estimated_bpm": 16.093740463256836,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0103",
+      "method": "welch",
+      "reference_bpm": 26.601268768310547,
+      "estimated_bpm": 26.806640625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0103",
+      "method": "autocorrelation",
+      "reference_bpm": 26.601268768310547,
+      "estimated_bpm": 26.470588235294116,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0103",
+      "method": "peaks",
+      "reference_bpm": 26.601268768310547,
+      "estimated_bpm": 26.47058823529412,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0103",
+      "method": "agreement_fusion",
+      "reference_bpm": 26.601268768310547,
+      "estimated_bpm": 26.47058823529412,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0103",
+      "method": "temporal_cnn",
+      "reference_bpm": 26.601268768310547,
+      "estimated_bpm": 28.040876388549805,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0104",
+      "method": "welch",
+      "reference_bpm": 20.719743728637695,
+      "estimated_bpm": 20.654296875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0104",
+      "method": "autocorrelation",
+      "reference_bpm": 20.719743728637695,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0104",
+      "method": "peaks",
+      "reference_bpm": 20.719743728637695,
+      "estimated_bpm": 20.689655172413794,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0104",
+      "method": "agreement_fusion",
+      "reference_bpm": 20.719743728637695,
+      "estimated_bpm": 20.689655172413794,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0104",
+      "method": "temporal_cnn",
+      "reference_bpm": 20.719743728637695,
+      "estimated_bpm": 21.71944236755371,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0105",
+      "method": "welch",
+      "reference_bpm": 21.155118942260742,
+      "estimated_bpm": 21.09375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0105",
+      "method": "autocorrelation",
+      "reference_bpm": 21.155118942260742,
+      "estimated_bpm": 20.930232558139537,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0105",
+      "method": "peaks",
+      "reference_bpm": 21.155118942260742,
+      "estimated_bpm": 21.42857142857143,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0105",
+      "method": "agreement_fusion",
+      "reference_bpm": 21.155118942260742,
+      "estimated_bpm": 21.09375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0105",
+      "method": "temporal_cnn",
+      "reference_bpm": 21.155118942260742,
+      "estimated_bpm": 21.31375503540039,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0106",
+      "method": "welch",
+      "reference_bpm": 33.599674224853516,
+      "estimated_bpm": 33.3984375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0106",
+      "method": "autocorrelation",
+      "reference_bpm": 33.599674224853516,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0106",
+      "method": "peaks",
+      "reference_bpm": 33.599674224853516,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0106",
+      "method": "agreement_fusion",
+      "reference_bpm": 33.599674224853516,
+      "estimated_bpm": 33.333333333333336,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0106",
+      "method": "temporal_cnn",
+      "reference_bpm": 33.599674224853516,
+      "estimated_bpm": 34.28715133666992,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0107",
+      "method": "welch",
+      "reference_bpm": 27.858360290527344,
+      "estimated_bpm": 27.685546875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0107",
+      "method": "autocorrelation",
+      "reference_bpm": 27.858360290527344,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0107",
+      "method": "peaks",
+      "reference_bpm": 27.858360290527344,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0107",
+      "method": "agreement_fusion",
+      "reference_bpm": 27.858360290527344,
+      "estimated_bpm": 28.125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0107",
+      "method": "temporal_cnn",
+      "reference_bpm": 27.858360290527344,
+      "estimated_bpm": 28.432703018188477,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0108",
+      "method": "welch",
+      "reference_bpm": 31.152339935302734,
+      "estimated_bpm": 31.201171875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0108",
+      "method": "autocorrelation",
+      "reference_bpm": 31.152339935302734,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0108",
+      "method": "peaks",
+      "reference_bpm": 31.152339935302734,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0108",
+      "method": "agreement_fusion",
+      "reference_bpm": 31.152339935302734,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0108",
+      "method": "temporal_cnn",
+      "reference_bpm": 31.152339935302734,
+      "estimated_bpm": 32.62892532348633,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0109",
+      "method": "welch",
+      "reference_bpm": 25.83707046508789,
+      "estimated_bpm": 25.927734375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0109",
+      "method": "autocorrelation",
+      "reference_bpm": 25.83707046508789,
+      "estimated_bpm": 25.714285714285715,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0109",
+      "method": "peaks",
+      "reference_bpm": 25.83707046508789,
+      "estimated_bpm": 25.71428571428571,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0109",
+      "method": "agreement_fusion",
+      "reference_bpm": 25.83707046508789,
+      "estimated_bpm": 25.714285714285715,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0109",
+      "method": "temporal_cnn",
+      "reference_bpm": 25.83707046508789,
+      "estimated_bpm": 25.371400833129883,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0110",
+      "method": "welch",
+      "reference_bpm": 27.406126022338867,
+      "estimated_bpm": 27.24609375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0110",
+      "method": "autocorrelation",
+      "reference_bpm": 27.406126022338867,
+      "estimated_bpm": 27.272727272727273,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0110",
+      "method": "peaks",
+      "reference_bpm": 27.406126022338867,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0110",
+      "method": "agreement_fusion",
+      "reference_bpm": 27.406126022338867,
+      "estimated_bpm": 27.27272727272727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0110",
+      "method": "temporal_cnn",
+      "reference_bpm": 27.406126022338867,
+      "estimated_bpm": 28.447168350219727,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0111",
+      "method": "welch",
+      "reference_bpm": 24.16686248779297,
+      "estimated_bpm": 24.169921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0111",
+      "method": "autocorrelation",
+      "reference_bpm": 24.16686248779297,
+      "estimated_bpm": 24.324324324324323,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0111",
+      "method": "peaks",
+      "reference_bpm": 24.16686248779297,
+      "estimated_bpm": 23.68421052631579,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0111",
+      "method": "agreement_fusion",
+      "reference_bpm": 24.16686248779297,
+      "estimated_bpm": 24.169921875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0111",
+      "method": "temporal_cnn",
+      "reference_bpm": 24.16686248779297,
+      "estimated_bpm": 24.938547134399414,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0112",
+      "method": "welch",
+      "reference_bpm": 19.1094970703125,
+      "estimated_bpm": 18.896484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0112",
+      "method": "autocorrelation",
+      "reference_bpm": 19.1094970703125,
+      "estimated_bpm": 18.75,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0112",
+      "method": "peaks",
+      "reference_bpm": 19.1094970703125,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0112",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.1094970703125,
+      "estimated_bpm": 18.896484375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0112",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.1094970703125,
+      "estimated_bpm": 18.167598724365234,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0113",
+      "method": "welch",
+      "reference_bpm": 19.258102416992188,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0113",
+      "method": "autocorrelation",
+      "reference_bpm": 19.258102416992188,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0113",
+      "method": "peaks",
+      "reference_bpm": 19.258102416992188,
+      "estimated_bpm": 19.565217391304348,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0113",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.258102416992188,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0113",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.258102416992188,
+      "estimated_bpm": 19.10884666442871,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0114",
+      "method": "welch",
+      "reference_bpm": 17.854793548583984,
+      "estimated_bpm": 18.017578125,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0114",
+      "method": "autocorrelation",
+      "reference_bpm": 17.854793548583984,
+      "estimated_bpm": 17.647058823529413,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0114",
+      "method": "peaks",
+      "reference_bpm": 17.854793548583984,
+      "estimated_bpm": 17.647058823529413,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0114",
+      "method": "agreement_fusion",
+      "reference_bpm": 17.854793548583984,
+      "estimated_bpm": 17.647058823529413,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0114",
+      "method": "temporal_cnn",
+      "reference_bpm": 17.854793548583984,
+      "estimated_bpm": 18.0926570892334,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0115",
+      "method": "welch",
+      "reference_bpm": 19.166568756103516,
+      "estimated_bpm": 19.3359375,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0115",
+      "method": "autocorrelation",
+      "reference_bpm": 19.166568756103516,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0115",
+      "method": "peaks",
+      "reference_bpm": 19.166568756103516,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0115",
+      "method": "agreement_fusion",
+      "reference_bpm": 19.166568756103516,
+      "estimated_bpm": 19.148936170212767,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0115",
+      "method": "temporal_cnn",
+      "reference_bpm": 19.166568756103516,
+      "estimated_bpm": 18.95450782775879,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0116",
+      "method": "welch",
+      "reference_bpm": 30.513946533203125,
+      "estimated_bpm": 30.322265625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0116",
+      "method": "autocorrelation",
+      "reference_bpm": 30.513946533203125,
+      "estimated_bpm": 31.03448275862069,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0116",
+      "method": "peaks",
+      "reference_bpm": 30.513946533203125,
+      "estimated_bpm": 30.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0116",
+      "method": "agreement_fusion",
+      "reference_bpm": 30.513946533203125,
+      "estimated_bpm": 30.322265625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0116",
+      "method": "temporal_cnn",
+      "reference_bpm": 30.513946533203125,
+      "estimated_bpm": 31.912588119506836,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0117",
+      "method": "welch",
+      "reference_bpm": 23.11568832397461,
+      "estimated_bpm": 23.291015625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0117",
+      "method": "autocorrelation",
+      "reference_bpm": 23.11568832397461,
+      "estimated_bpm": 23.076923076923077,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0117",
+      "method": "peaks",
+      "reference_bpm": 23.11568832397461,
+      "estimated_bpm": 23.376623376623378,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0117",
+      "method": "agreement_fusion",
+      "reference_bpm": 23.11568832397461,
+      "estimated_bpm": 23.291015625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0117",
+      "method": "temporal_cnn",
+      "reference_bpm": 23.11568832397461,
+      "estimated_bpm": 23.231008529663086,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0118",
+      "method": "welch",
+      "reference_bpm": 10.188509941101074,
+      "estimated_bpm": 9.66796875,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0118",
+      "method": "autocorrelation",
+      "reference_bpm": 10.188509941101074,
+      "estimated_bpm": 10.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0118",
+      "method": "peaks",
+      "reference_bpm": 10.188509941101074,
+      "estimated_bpm": 10.05586592178771,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0118",
+      "method": "agreement_fusion",
+      "reference_bpm": 10.188509941101074,
+      "estimated_bpm": 10.0,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0118",
+      "method": "temporal_cnn",
+      "reference_bpm": 10.188509941101074,
+      "estimated_bpm": 10.409805297851562,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0119",
+      "method": "welch",
+      "reference_bpm": 22.168712615966797,
+      "estimated_bpm": 21.97265625,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0119",
+      "method": "autocorrelation",
+      "reference_bpm": 22.168712615966797,
+      "estimated_bpm": 21.951219512195124,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0119",
+      "method": "peaks",
+      "reference_bpm": 22.168712615966797,
+      "estimated_bpm": 21.95121951219512,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0119",
+      "method": "agreement_fusion",
+      "reference_bpm": 22.168712615966797,
+      "estimated_bpm": 21.951219512195124,
+      "processing_seconds": null
+    },
+    {
+      "case_id": "test-0119",
+      "method": "temporal_cnn",
+      "reference_bpm": 22.168712615966797,
+      "estimated_bpm": 21.874895095825195,
+      "processing_seconds": null
+    }
+  ],
+  "limitations": "Independent synthetic stationary waveforms, not clinical or independent real-video validation. Runtime is not measured in waveform comparison. agreement_fusion is signal-only, not the video quality gate."
+}

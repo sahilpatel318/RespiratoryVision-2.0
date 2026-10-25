@@ -1,0 +1,786 @@
+[
+  {
+    "case_id": "development-clean-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11000,
+      "condition": "clean"
+    },
+    "reference_bpm": 12.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.49351602350272,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9433319944529088,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.116885900497437,
+        "roi_consistency": 0.9969699337416855,
+        "camera_translation_rms_pixels": 5.4722273110454135e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-clean-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11001,
+      "condition": "clean"
+    },
+    "reference_bpm": 18.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.179609248993304,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9203768702171542,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.936623275279999,
+        "roi_consistency": 0.9954496717439175,
+        "camera_translation_rms_pixels": 5.8780360823065135e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-mild_noise-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 4.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11100,
+      "condition": "mild_noise"
+    },
+    "reference_bpm": 12.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.430723821784028,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9434356698342513,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 8.871956884860992,
+        "roi_consistency": 0.9937959899360901,
+        "camera_translation_rms_pixels": 0.012214453314543952
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-mild_noise-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 4.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11101,
+      "condition": "mild_noise"
+    },
+    "reference_bpm": 18.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.1392512726612356,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9197039637938667,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.98564213514328,
+        "roi_consistency": 0.9974552724518557,
+        "camera_translation_rms_pixels": 0.012148378202315341
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-camera_motion-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 7.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11200,
+      "condition": "camera_motion"
+    },
+    "reference_bpm": 12.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.268354709283943,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9355643830662949,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 16.408923506736755,
+        "roi_consistency": 0.7795390291911128,
+        "camera_translation_rms_pixels": 0.5931622159845263
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-camera_motion-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 7.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11201,
+      "condition": "camera_motion"
+    },
+    "reference_bpm": 18.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.074824630355456,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.8863696582823094,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 0.9916317991631799,
+        "compensation_fallback": true,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 18.85974097251892,
+        "roi_consistency": 0.9375322950729361,
+        "camera_translation_rms_pixels": 0.5957892794696668
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-low_amplitude-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 0.025,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11300,
+      "condition": "low_amplitude"
+    },
+    "reference_bpm": 12.0,
+    "quality": {
+      "state": "LOW_QUALITY",
+      "accepted": false,
+      "reasons": [
+        "Displacement amplitude is below the configured minimum."
+      ],
+      "features": {
+        "displacement_std_pixels": 0.019113237748377178,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.8178348020348389,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 0.484092529863119,
+        "roi_consistency": 1.0,
+        "camera_translation_rms_pixels": 1.2034707685955474e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-low_amplitude-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 0.025,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11301,
+      "condition": "low_amplitude"
+    },
+    "reference_bpm": 18.0,
+    "quality": {
+      "state": "LOW_QUALITY",
+      "accepted": false,
+      "reasons": [
+        "Displacement amplitude is below the configured minimum."
+      ],
+      "features": {
+        "displacement_std_pixels": 0.016914120663836067,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.6601336354526487,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 0.3640631735324858,
+        "roi_consistency": 1.0,
+        "camera_translation_rms_pixels": 6.883927913889493e-06
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-illumination_changes-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 35.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11400,
+      "condition": "illumination_changes"
+    },
+    "reference_bpm": 12.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.442863580567773,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9433521635657502,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.023598432540894,
+        "roi_consistency": 0.9921185075874113,
+        "camera_translation_rms_pixels": 0.017858906607066596
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-illumination_changes-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 35.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11401,
+      "condition": "illumination_changes"
+    },
+    "reference_bpm": 18.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.1332599481850547,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9218289543272891,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.770668506622314,
+        "roi_consistency": 0.997085063648094,
+        "camera_translation_rms_pixels": 0.018427475292949975
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-occlusion-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.45,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11500,
+      "condition": "occlusion"
+    },
+    "reference_bpm": 12.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.2340713843214925,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9381982770042573,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.325177431106567,
+        "roi_consistency": 0.9325228688497618,
+        "camera_translation_rms_pixels": 3.743470335950644e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-occlusion-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.45,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.0,
+      "pause_fraction": 0.0,
+      "seed": 11501,
+      "condition": "occlusion"
+    },
+    "reference_bpm": 18.0,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.015381504349684,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.9155537412467871,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.872051060199738,
+        "roi_consistency": 0.9383467106873382,
+        "camera_translation_rms_pixels": 4.966166218304313e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-irregular_breathing-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 6.0,
+      "irregularity": 0.3,
+      "pause_fraction": 0.08,
+      "seed": 11600,
+      "condition": "irregular_breathing"
+    },
+    "reference_bpm": 14.276448916770285,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.0219850774252826,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.6891514217740478,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 9.645717322826385,
+        "roi_consistency": 0.9969859869709352,
+        "camera_translation_rms_pixels": 4.302155604635849e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [
+        "Autocorrelation peak is too weak."
+      ],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-irregular_breathing-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 0.0,
+      "camera_amplitude": 0.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 0.0,
+      "occlusion_fraction": 0.0,
+      "artifact_pixels": 0.0,
+      "rate_change_bpm": 6.0,
+      "irregularity": 0.3,
+      "pause_fraction": 0.08,
+      "seed": 11601,
+      "condition": "irregular_breathing"
+    },
+    "reference_bpm": 20.03769420848876,
+    "quality": {
+      "state": "ESTIMATOR_DISAGREEMENT",
+      "accepted": false,
+      "reasons": [
+        "Competing spectral peaks suggest harmonic ambiguity."
+      ],
+      "features": {
+        "displacement_std_pixels": 3.081572965155811,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.5936368787415293,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 10.40551507472992,
+        "roi_consistency": 0.9918480491471631,
+        "camera_translation_rms_pixels": 5.4095266893626784e-05
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [
+        "Competing spectral peaks suggest harmonic ambiguity."
+      ],
+      "autocorrelation": [
+        "Autocorrelation peak is too weak."
+      ],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-combined_stress-00",
+    "generation": {
+      "bpm": 12.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 7.0,
+      "camera_amplitude": 9.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 30.0,
+      "occlusion_fraction": 0.35,
+      "artifact_pixels": 12.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.2,
+      "pause_fraction": 0.0,
+      "seed": 11700,
+      "condition": "combined_stress"
+    },
+    "reference_bpm": 12.190768561784731,
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 4.643203531965909,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.7837950257265336,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 0.9874476987447699,
+        "compensation_fallback": true,
+        "artifact_fraction": 0.04602510460251046,
+        "motion_speed_p95_pixels_second": 77.1929326057434,
+        "roi_consistency": 0.5838277835129592,
+        "camera_translation_rms_pixels": 1.1030212468085483
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "development-combined_stress-01",
+    "generation": {
+      "bpm": 18.0,
+      "duration_seconds": 24.0,
+      "fps": 10.0,
+      "width": 200,
+      "height": 150,
+      "amplitude_pixels": 4.0,
+      "phase": 0.13,
+      "noise_std": 7.0,
+      "camera_amplitude": 9.0,
+      "camera_hz": 0.23,
+      "illumination_amplitude": 30.0,
+      "occlusion_fraction": 0.35,
+      "artifact_pixels": 12.0,
+      "rate_change_bpm": 0.0,
+      "irregularity": 0.2,
+      "pause_fraction": 0.0,
+      "seed": 11701,
+      "condition": "combined_stress"
+    },
+    "reference_bpm": 18.286152842677097,
+    "quality": {
+      "state": "ESTIMATOR_DISAGREEMENT",
+      "accepted": false,
+      "reasons": [
+        "Eligible estimators disagree beyond the configured tolerance."
+      ],
+      "features": {
+        "displacement_std_pixels": 6.069915111358211,
+        "duration_seconds": 24.0,
+        "spectral_concentration": 0.6027298212845218,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 1.0,
+        "compensation_fallback": false,
+        "artifact_fraction": 0.0502092050209205,
+        "motion_speed_p95_pixels_second": 73.20268344879146,
+        "roi_consistency": 0.875251684112727,
+        "camera_translation_rms_pixels": 1.028205694877708
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [
+        "Autocorrelation peak is too weak."
+      ],
+      "peaks": []
+    }
+  }
+]

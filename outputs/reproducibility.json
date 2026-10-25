@@ -1,0 +1,5 @@
+{
+  "comparison": "32-case test run vs independently regenerated CNN-inclusive run",
+  "classical_rows_compared": 160,
+  "identical_excluding_processing_seconds": true
+}

@@ -1,0 +1,16 @@
+case_id,condition,method,reference_bpm,estimated_bpm,signed_error_bpm,absolute_error_bpm,status,processing_seconds
+development-camera_motion-01,camera_motion,original_baseline,18.0,14.0625,-3.9375,3.9375,AVAILABLE,1.747835699999996
+development-low_amplitude-00,low_amplitude,quality_fusion,12.0,,,,LOW_QUALITY,3.533788100001402
+development-low_amplitude-01,low_amplitude,quality_fusion,18.0,,,,LOW_QUALITY,3.4324341000010463
+development-irregular_breathing-00,irregular_breathing,original_baseline,14.276448916770285,17.28515625,3.008707333229715,3.008707333229715,AVAILABLE,1.8142451000003348
+development-irregular_breathing-00,irregular_breathing,compensated_welch,14.276448916770285,17.28515625,3.008707333229715,3.008707333229715,AVAILABLE,3.526272799999788
+development-irregular_breathing-00,irregular_breathing,autocorrelation,14.276448916770285,16.666666666666668,2.390217749896383,2.390217749896383,METHOD_FLAGGED,3.526272799999788
+development-irregular_breathing-01,irregular_breathing,original_baseline,20.03769420848876,24.0234375,3.985743291511241,3.985743291511241,AVAILABLE,1.6742041000015888
+development-irregular_breathing-01,irregular_breathing,compensated_welch,20.03769420848876,24.0234375,3.985743291511241,3.985743291511241,METHOD_FLAGGED,3.5817229999993287
+development-irregular_breathing-01,irregular_breathing,autocorrelation,20.03769420848876,23.076923076923077,3.039228868434318,3.039228868434318,METHOD_FLAGGED,3.5817229999993287
+development-irregular_breathing-01,irregular_breathing,peaks,20.03769420848876,23.076923076923077,3.039228868434318,3.039228868434318,AVAILABLE,3.5817229999993287
+development-irregular_breathing-01,irregular_breathing,quality_fusion,20.03769420848876,,,,ESTIMATOR_DISAGREEMENT,3.5817229999993287
+development-combined_stress-01,combined_stress,original_baseline,18.286152842677097,13.18359375,-5.102559092677097,5.102559092677097,AVAILABLE,1.555295500000284
+development-combined_stress-01,combined_stress,compensated_welch,18.286152842677097,13.76953125,-4.516621592677097,4.516621592677097,AVAILABLE,3.280538200000592
+development-combined_stress-01,combined_stress,autocorrelation,18.286152842677097,7.142857142857143,-11.143295699819955,11.143295699819955,METHOD_FLAGGED,3.280538200000592
+development-combined_stress-01,combined_stress,quality_fusion,18.286152842677097,,,,ESTIMATOR_DISAGREEMENT,3.280538200000592

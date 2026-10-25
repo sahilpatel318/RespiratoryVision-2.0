@@ -1,0 +1,5 @@
+recording_id,subject_id,video_path,reference_bpm,condition,source
+fixture18,synthetic18,synthetic_breathing_18bpm.mp4,18,clean,original synthetic generator
+fixture12,synthetic12,test_12bpm.mp4,12,clean,original synthetic generator
+fixture28,synthetic28,test_28bpm.mp4,28,clean,original synthetic generator
+fixture22,synthetic22,custom_22bpm.mp4,22,clean,original synthetic generator

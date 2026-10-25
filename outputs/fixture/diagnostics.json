@@ -1,0 +1,110 @@
+[
+  {
+    "case_id": "recording-0001",
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.565097173011771,
+        "duration_seconds": 20.0,
+        "spectral_concentration": 0.9225356073368213,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 0.0,
+        "compensation_fallback": true,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 10.052277088165283,
+        "roi_consistency": 0.9999476862309384,
+        "camera_translation_rms_pixels": 0.0
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "recording-0002",
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.5464076937483626,
+        "duration_seconds": 25.0,
+        "spectral_concentration": 0.9381431805501418,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 0.0,
+        "compensation_fallback": true,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 15.050325751304626,
+        "roi_consistency": 0.9997165722187715,
+        "camera_translation_rms_pixels": 0.0
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "recording-0003",
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.5601544211982934,
+        "duration_seconds": 25.0,
+        "spectral_concentration": 0.916392650139556,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 0.0,
+        "compensation_fallback": true,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 15.153092086315155,
+        "roi_consistency": 0.9997539481533527,
+        "camera_translation_rms_pixels": 0.0
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  },
+  {
+    "case_id": "recording-0004",
+    "quality": {
+      "state": "ACCEPTED",
+      "accepted": true,
+      "reasons": [],
+      "features": {
+        "displacement_std_pixels": 3.595417815394725,
+        "duration_seconds": 20.0,
+        "spectral_concentration": 0.9195339948244552,
+        "compensation_enabled": true,
+        "background_tracking_fraction": 0.0,
+        "compensation_fallback": true,
+        "artifact_fraction": 0.0,
+        "motion_speed_p95_pixels_second": 15.075425684452057,
+        "roi_consistency": 0.9998863796706219,
+        "camera_translation_rms_pixels": 0.0
+      },
+      "thresholds_provisional": true,
+      "probability_calibrated": false
+    },
+    "method_reasons": {
+      "welch": [],
+      "autocorrelation": [],
+      "peaks": []
+    }
+  }
+]

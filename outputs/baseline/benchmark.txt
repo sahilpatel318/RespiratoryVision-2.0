@@ -1,0 +1,4 @@
+MAE: 0.138 BPM
+RMSE: 0.166 BPM
+Mean bias: -0.126 BPM
+Wrote: outputs\baseline\synthetic_benchmark.csv
